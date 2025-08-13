@@ -128,22 +128,11 @@ const Dashboard = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-semibold text-foreground">Job Results</h2>
-                <span className="text-sm text-muted-foreground">0 jobs found</span>
+                <span className="text-sm text-muted-foreground">5 jobs found</span>
               </div>
 
-              {/* Empty State */}
-              <Card className="text-center py-12">
-                <CardContent>
-                  <div className="text-muted-foreground">
-                    <Search className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                    <h3 className="text-lg font-medium mb-2">No jobs found</h3>
-                    <p>Try adjusting your search criteria or filters to find more results.</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Sample Job Card (hidden by default) */}
-              <Card className="hidden">
+              {/* Job Cards */}
+              <Card>
                 <CardContent className="pt-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
@@ -170,7 +159,135 @@ const Dashboard = () => {
                     <Button variant="outline">Apply</Button>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    We're looking for a Senior Software Engineer to join our growing team...
+                    We're looking for a Senior Software Engineer to join our growing team. You'll work with React, Node.js, and modern technologies to build scalable applications.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">Frontend Developer</h3>
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Building className="h-4 w-4" />
+                          StartupXYZ
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          Remote
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-4 w-4" />
+                          Full-time
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-4 w-4" />
+                          $90k - $130k
+                        </span>
+                      </div>
+                    </div>
+                    <Button variant="outline">Apply</Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Join our remote team to build beautiful user interfaces with React, TypeScript, and Tailwind CSS. Perfect for developers passionate about UI/UX.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">Product Manager</h3>
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Building className="h-4 w-4" />
+                          InnovateCo
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          New York, NY
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-4 w-4" />
+                          Full-time
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-4 w-4" />
+                          $110k - $160k
+                        </span>
+                      </div>
+                    </div>
+                    <Button variant="outline">Apply</Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Drive product strategy and roadmap for our core platform. Work with cross-functional teams to deliver exceptional user experiences.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">Data Scientist</h3>
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Building className="h-4 w-4" />
+                          DataFlow
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          Austin, TX
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-4 w-4" />
+                          Full-time
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-4 w-4" />
+                          $100k - $150k
+                        </span>
+                      </div>
+                    </div>
+                    <Button variant="outline">Apply</Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Analyze complex datasets and build machine learning models to drive business insights. Experience with Python, SQL, and ML frameworks required.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-1">UX Designer</h3>
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Building className="h-4 w-4" />
+                          DesignStudio
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          Los Angeles, CA
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-4 w-4" />
+                          Contract
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-4 w-4" />
+                          $80k - $120k
+                        </span>
+                      </div>
+                    </div>
+                    <Button variant="outline">Apply</Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Create intuitive and engaging user experiences for mobile and web applications. Strong portfolio showcasing design thinking and prototyping skills.
                   </p>
                 </CardContent>
               </Card>
